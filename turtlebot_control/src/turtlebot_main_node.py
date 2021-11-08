@@ -30,7 +30,7 @@ def turtlebot_main_function(goal_object):
     print("Node has already been initialized, do nothing")
   rospy.Publisher('turtlebot_controller', Int8, queue_size=20)
   rospy.Subscriber("mission_num", Int8, mission_callback)
-  if mission_num == 0:
+  if mission_num == 0: # Adjust and object following
     try:
         rospy.init_node("turtlebot_follower")
     except rospy.exceptions.ROSException as e:
