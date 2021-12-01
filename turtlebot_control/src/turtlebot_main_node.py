@@ -26,6 +26,7 @@ def turtlebot_main_function(goal_object):
   #called /turtlebot_controller.
   try:
     rospy.init_node("turtlebot_controller")
+    print('hi')
   except rospy.exceptions.ROSException as e:
     print("Node has already been initialized, do nothing")
   rospy.Publisher('turtlebot_controller', Int8, queue_size=20)
@@ -47,7 +48,7 @@ def follow():
   global mission_default
   angular_tolerance = 10
   translational_tolerance = 10
-  image_centerX = 640
+  image_centerX = 640 #pixel frame 1280*720
   image_centerY = 360
   pub_follow = rospy.Publisher('cmd_vel_mux/input/teleop', Twist, queue_size=20)
   rospy.Subscriber("target_pos_node", String, retrieve_callback)
@@ -78,6 +79,10 @@ def follow():
     pub_follow.publish(command)
     r.sleep()
 
+#Callback Functions corresponding to retrieving informations:
+    #mission_num
+    #target_pos_in_frame
+    #
 def mission_callback(int):
   global mission_num
   mission_num = int
@@ -90,7 +95,9 @@ def retrieve_callback(string):
   depth = float(depth)
   target_pos_in_frame = [x,y,depth]
 
+#Helper Functions:
 def depth_difference(depth_array):
+    #depth difference: input is buffer array of depths, this would smooth the data for controller.
   return 0.2 * depth_array[0] + 0.3 * depth_array[1] + 0.5 * depth_array[2]
   
 #   controller_pub = rospy.Publisher('turtlebot_controller', Int8, queue_size=20)
@@ -98,4 +105,7 @@ def depth_difference(depth_array):
 #   mission_msg.data = mission
 #   controller_pub.publish(mission_msg)
 
+if __name__ == '__main__':
+    print('execute main')
+    turtlebot_main_function('a')
     
