@@ -6,7 +6,7 @@ from darknet_ros_msgs.msgs import BoundingBoxes, BoundingBox, ObjectCount
 import BoundingBox.msgs
 
 class Following():
-    
+    #480 * 640
     
     def __init__(self, object_name):
         self.object_name = object_name
@@ -20,13 +20,14 @@ class Following():
         
         
         '''TODO: find out the center of the image'''
-        self.center_x = 
-        self.center_y = 
+        self.center_x = 240
+        self.center_y = 320
     
     def bounding_boxes_callback(self, msg):
         for i in range(len(msg.bounding_boxes)):
             if msg.bounding_boxes[i] == self.object_name:
                 cur_frame = msg.bounding_boxes[i]
+                break
         xmin = cur_frame.xmin
         ymin = cur_frame.ymin
         xmax = cur_frame.xmax
@@ -46,20 +47,34 @@ class Following():
         xmid_point = xmin + (xmin + xmax)/2
         tol = 10
         if xmid_point > self.center_x and abs(xmid_point - self.center_x) > tol:
+            self.command.angular.z = -0.3
+            return True
+        elif xmid_point < self.center_x and abs(xmid_point - self.center_x) > tol:
             self.command.angular.z = 0.3
             return True
+        self.command.angular.z = 0
         return False
     
     def adjust_depth(self, xmin, ymin, xmax, ymax):
         #adjust the depth to let image be of a fixed size
         current_area = (xmax - xmin) * (ymax - ymin)
-        desired_area = '''TODO: find desired area'''
+        desired_area = 10000
+        '''TODO: find desired area'''
         tol = 20
         if current_area < desired_area and abs(current_area - desired_area) > tol:
             self.command.linear.x = 0.3
             return True
+        if current_area > desired_area and abs(current_area - desired_area) > tol:
+            self.command.linear.x = -0.3
+            return True
+        self.command.linear.x = 0
         return False
-
+    
+    
 if __name__ == "__main__":
-    rospy.init_node("following_node")
+    try:
+        following_turtlebot = Following('bottle')
+    except rospy.ROSInterruptException:
+        print("exception")
+        pass
     rospy.spin()
