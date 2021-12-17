@@ -232,6 +232,8 @@ class searchMaster:
         if (self.ymax + self.ymin)/2 >= 396 and abs((self.xmin + self.xmax) / 2  - 320) <= 20:
             # When we exit we have reached the goal state and we need to kill the node and stop.
             print('should exit whole program')
+            # The image robot seen will be shown to the viewer.
+            os.system("rosrun image_view image_view image:=/camera/rgb/image_raw")
             nodes = os.popen("rosnode list").readlines()
             for i in range(len(nodes)):
                 nodes[i] = nodes[i].replace("\n","")

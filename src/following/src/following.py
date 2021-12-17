@@ -17,8 +17,10 @@ class Following:
         self.linear_value = 0.1
         self.linear_tol = 0.05
         self.linear_coefficient = 0.2
+        self.linear_derivative = 0.15
         self.angular_tol = 15
         self.angular_coefficient = 0.0015
+        self.angular_derivative = 0.001
         self.object_names = object_names
         self.rate = rospy.Rate(50)
         self.command = Twist()
@@ -32,6 +34,9 @@ class Following:
         self.control_pub = rospy.Publisher('cmd_vel_mux/input/teleop', Twist, queue_size = 0)
         self.bridge = CvBridge()
         self.depth_msg = None
+        # This denotes the pervious error and will be used for Derivative calculation.
+        self.error = 0
+        self.angular_error = 0
         
         # person following filters, if the area of the boundingbox is too small, it is likely that the person is not the one we are following.
         self.person_minimum_area = 13000
@@ -112,24 +117,29 @@ class Following:
         xmid_point = xmin + (xmax - xmin)/2
         print('xmid',xmid_point)
         error = xmid_point - self.center_x
-        if xmid_point > self.center_x and abs(xmid_point - self.center_x) > self.angular_tol:
-            self.command.angular.z = -self.angular_coefficient * error
+        derivative = error - self.error
+        self.error = error
+        if abs(xmid_point - self.center_x) > self.angular_tol:
+            self.command.angular.z = -self.angular_coefficient * error - self.angular_coefficient * derivative
             return True
-        elif xmid_point < self.center_x and abs(xmid_point - self.center_x) > self.angular_tol:
-            self.command.angular.z = -self.angular_coefficient * error
-            return True
-        self.command.angular.z = 0
-        return False
+        else:
+            self.command.angular.z = 0
+            return False
     
     def adjust_depth(self, sampling_depth):
         #adjust the depth to let image be of a fixed size
         # The pointcloud depth data may vary a bit from time to time so we use a tolerance to make
         # turtlebot stop when it is within a specific range
+        error = sampling_depth - self.target_depth
+        #This term calculates a one time derivative term of error
+        derivative = error - self.error
+        self.error = error
         if sampling_depth > self.target_depth and abs(sampling_depth - self.target_depth) > self.linear_tol:
-            self.command.linear.x = self.linear_coefficient * (sampling_depth - self.target_depth)
+            self.command.linear.x = self.linear_coefficient * (sampling_depth - self.target_depth) + self.linear_derivative * derivative
             return True
-        self.command.linear.x = 0
-        return False
+        else:
+            self.command.linear.x = 0
+            return False
     
 if __name__ == "__main__":
     #Taking a string input telling us which object to track.
