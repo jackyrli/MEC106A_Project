@@ -1,0 +1,79 @@
+[35m[1mScanning dependencies of target darknet_ros_msgs_generate_messages_cpp[0m
+[  0%] Built target darknet_ros_msgs_generate_messages_cpp
+[ 10%] [34m[1mBuilding NVCC (Device) object CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o[0m
+[ 10%] [34m[1mBuilding NVCC (Device) object CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o[0m
+[ 10%] [34m[1mBuilding NVCC (Device) object CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o[0m
+[ 10%] [34m[1mBuilding NVCC (Device) object CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o[0m
+[ 10%] [34m[1mBuilding NVCC (Device) object CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o[0m
+[ 10%] [34m[1mBuilding NVCC (Device) object CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o[0m
+[ 10%] [34m[1mBuilding NVCC (Device) object CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o[0m
+[ 10%] [34m[1mBuilding NVCC (Device) object CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o[0m
+nvcc fatal   : Unsupported gpu architecture 'compute_30'
+nvcc fatal   : Unsupported gpu architecture 'compute_30'
+CMake Error at darknet_ros_lib_generated_dropout_layer_kernels.cu.o.cmake:207 (message):
+  Error generating
+  /home/cc/ee106a/fl21/class/ee106a-aaf/ros_workspaces/final-project-workspace/build/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_dropout_layer_kernels.cu.o
+
+CMake Error at darknet_ros_lib_generated_maxpool_layer_kernels.cu.o.cmake:207 (message):
+  Error generating
+  /home/cc/ee106a/fl21/class/ee106a-aaf/ros_workspaces/final-project-workspace/build/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_maxpool_layer_kernels.cu.o
+
+
+nvcc fatal   : Unsupported gpu architecture 'compute_30'
+nvcc fatal   : Unsupported gpu architecture 'compute_30'
+CMake Error at darknet_ros_lib_generated_col2im_kernels.cu.o.cmake:207 (message):
+  Error generating
+  /home/cc/ee106a/fl21/class/ee106a-aaf/ros_workspaces/final-project-workspace/build/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_col2im_kernels.cu.o
+
+
+nvcc fatal   : Unsupported gpu architecture 'compute_30'
+
+nvcc fatal   : Unsupported gpu architecture 'compute_30'
+CMake Error at darknet_ros_lib_generated_blas_kernels.cu.o.cmake:207 (message):
+  Error generating
+  /home/cc/ee106a/fl21/class/ee106a-aaf/ros_workspaces/final-project-workspace/build/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_blas_kernels.cu.o
+
+
+CMake Error at darknet_ros_lib_generated_deconvolutional_kernels.cu.o.cmake:207 (message):
+  Error generating
+  /home/cc/ee106a/fl21/class/ee106a-aaf/ros_workspaces/final-project-workspace/build/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_deconvolutional_kernels.cu.o
+
+
+CMake Error at darknet_ros_lib_generated_crop_layer_kernels.cu.o.cmake:207 (message):
+  Error generating
+  /home/cc/ee106a/fl21/class/ee106a-aaf/ros_workspaces/final-project-workspace/build/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_crop_layer_kernels.cu.o
+
+
+CMakeFiles/darknet_ros_lib.dir/build.make:126: recipe for target 'CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o' failed
+make[2]: *** [CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+CMakeFiles/darknet_ros_lib.dir/build.make:105: recipe for target 'CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o' failed
+make[2]: *** [CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o] Error 1
+CMakeFiles/darknet_ros_lib.dir/build.make:91: recipe for target 'CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o' failed
+make[2]: *** [CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o] Error 1
+CMakeFiles/darknet_ros_lib.dir/build.make:84: recipe for target 'CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o' failed
+make[2]: *** [CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o] Error 1
+make[2]: *** [CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o] Error 1
+CMakeFiles/darknet_ros_lib.dir/build.make:70: recipe for target 'CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o' failed
+nvcc fatal   : Unsupported gpu architecture 'compute_30'
+nvcc fatal   : Unsupported gpu architecture 'compute_30'
+CMakeFiles/darknet_ros_lib.dir/build.make:98: recipe for target 'CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o' failed
+make[2]: *** [CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o] Error 1
+CMake Error at darknet_ros_lib_generated_activation_kernels.cu.o.cmake:207 (message):
+  Error generating
+  /home/cc/ee106a/fl21/class/ee106a-aaf/ros_workspaces/final-project-workspace/build/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_activation_kernels.cu.o
+
+
+CMake Error at darknet_ros_lib_generated_avgpool_layer_kernels.cu.o.cmake:207 (message):
+  Error generating
+  /home/cc/ee106a/fl21/class/ee106a-aaf/ros_workspaces/final-project-workspace/build/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_avgpool_layer_kernels.cu.o
+
+
+CMakeFiles/darknet_ros_lib.dir/build.make:63: recipe for target 'CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o' failed
+make[2]: *** [CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o] Error 1
+CMakeFiles/darknet_ros_lib.dir/build.make:77: recipe for target 'CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o' failed
+make[2]: *** [CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o] Error 1
+CMakeFiles/Makefile2:1002: recipe for target 'CMakeFiles/darknet_ros_lib.dir/all' failed
+make[1]: *** [CMakeFiles/darknet_ros_lib.dir/all] Error 2
+Makefile:138: recipe for target 'all' failed
+make: *** [all] Error 2

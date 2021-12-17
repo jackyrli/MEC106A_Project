@@ -1,0 +1,5 @@
+turtlebot_control
+/home/cc/ee106a/fl21/class/ee106a-aaf/ros_workspaces/final-project-workspace/devel/.private/turtlebot_control/cmake.lock /home/cc/ee106a/fl21/class/ee106a-aaf/ros_workspaces/final-project-workspace/devel/./cmake.lock
+/home/cc/ee106a/fl21/class/ee106a-aaf/ros_workspaces/final-project-workspace/devel/.private/turtlebot_control/lib/pkgconfig/turtlebot_control.pc /home/cc/ee106a/fl21/class/ee106a-aaf/ros_workspaces/final-project-workspace/devel/lib/pkgconfig/turtlebot_control.pc
+/home/cc/ee106a/fl21/class/ee106a-aaf/ros_workspaces/final-project-workspace/devel/.private/turtlebot_control/share/turtlebot_control/cmake/turtlebot_controlConfig.cmake /home/cc/ee106a/fl21/class/ee106a-aaf/ros_workspaces/final-project-workspace/devel/share/turtlebot_control/cmake/turtlebot_controlConfig.cmake
+/home/cc/ee106a/fl21/class/ee106a-aaf/ros_workspaces/final-project-workspace/devel/.private/turtlebot_control/share/turtlebot_control/cmake/turtlebot_controlConfig-version.cmake /home/cc/ee106a/fl21/class/ee106a-aaf/ros_workspaces/final-project-workspace/devel/share/turtlebot_control/cmake/turtlebot_controlConfig-version.cmake

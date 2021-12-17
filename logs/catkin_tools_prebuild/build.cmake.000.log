@@ -1,0 +1,24 @@
+Not searching for unused variables given on the command line.
+[36m--[0m The C compiler identification is unknown
+[36m--[0m The CXX compiler identification is GNU 5.4.0
+[31m[1mCMake Error[0m at /home/cc/ee106a/fl21/class/ee106a-aaf/ros_workspaces/final-project-workspace/build/catkin_tools_prebuild/CMakeLists.txt:2 (project):
+  The CMAKE_C_COMPILER:
+
+    /usr/bin/gcc-6
+
+  is not a full path to an existing compiler tool.
+
+  Tell CMake where to find the compiler by setting either the environment
+  variable "CC" or the CMake cache entry CMAKE_C_COMPILER to the full path to
+  the compiler, or to the compiler name if it is in the PATH.
+
+
+[36m--[0m Check for working CXX compiler: /usr/bin/c++
+[36m--[0m Check for working CXX compiler: /usr/bin/c++ -- works
+[36m--[0m Detecting CXX compiler ABI info
+[36m--[0m Detecting CXX compiler ABI info - done
+[36m--[0m Detecting CXX compile features
+[36m--[0m Detecting CXX compile features - done
+[36m--[0m Configuring incomplete, errors occurred!
+See also "/home/cc/ee106a/fl21/class/ee106a-aaf/ros_workspaces/final-project-workspace/build/catkin_tools_prebuild/CMakeFiles/CMakeOutput.log".
+See also "/home/cc/ee106a/fl21/class/ee106a-aaf/ros_workspaces/final-project-workspace/build/catkin_tools_prebuild/CMakeFiles/CMakeError.log".

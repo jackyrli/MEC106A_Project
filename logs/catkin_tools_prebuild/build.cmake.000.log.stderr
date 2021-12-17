@@ -1,0 +1,12 @@
+[31m[1mCMake Error[0m at /home/cc/ee106a/fl21/class/ee106a-aaf/ros_workspaces/final-project-workspace/build/catkin_tools_prebuild/CMakeLists.txt:2 (project):
+  The CMAKE_C_COMPILER:
+
+    /usr/bin/gcc-6
+
+  is not a full path to an existing compiler tool.
+
+  Tell CMake where to find the compiler by setting either the environment
+  variable "CC" or the CMake cache entry CMAKE_C_COMPILER to the full path to
+  the compiler, or to the compiler name if it is in the PATH.
+
+

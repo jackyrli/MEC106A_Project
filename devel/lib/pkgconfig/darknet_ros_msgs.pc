@@ -1,0 +1,8 @@
+prefix=/home/cc/ee106a/fl21/class/ee106a-aaf/ros_workspaces/final-project-workspace/devel
+
+Name: darknet_ros_msgs
+Description: Description of darknet_ros_msgs
+Version: 1.1.5
+Cflags: -I/home/cc/ee106a/fl21/class/ee106a-aaf/ros_workspaces/final-project-workspace/devel/include
+Libs: -L${prefix}/lib 
+Requires: actionlib_msgs geometry_msgs sensor_msgs message_runtime std_msgs

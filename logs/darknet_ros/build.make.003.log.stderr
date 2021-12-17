@@ -1,0 +1,59 @@
+nvcc fatal   : Unsupported gpu architecture 'compute_30'
+nvcc fatal   : Unsupported gpu architecture 'compute_30'
+CMake Error at darknet_ros_lib_generated_dropout_layer_kernels.cu.o.cmake:207 (message):
+  Error generating
+  /home/cc/ee106a/fl21/class/ee106a-aaf/ros_workspaces/final-project-workspace/build/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_dropout_layer_kernels.cu.o
+
+CMake Error at darknet_ros_lib_generated_maxpool_layer_kernels.cu.o.cmake:207 (message):
+  Error generating
+  /home/cc/ee106a/fl21/class/ee106a-aaf/ros_workspaces/final-project-workspace/build/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_maxpool_layer_kernels.cu.o
+
+
+nvcc fatal   : Unsupported gpu architecture 'compute_30'
+nvcc fatal   : Unsupported gpu architecture 'compute_30'
+CMake Error at darknet_ros_lib_generated_col2im_kernels.cu.o.cmake:207 (message):
+  Error generating
+  /home/cc/ee106a/fl21/class/ee106a-aaf/ros_workspaces/final-project-workspace/build/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_col2im_kernels.cu.o
+
+
+nvcc fatal   : Unsupported gpu architecture 'compute_30'
+
+nvcc fatal   : Unsupported gpu architecture 'compute_30'
+CMake Error at darknet_ros_lib_generated_blas_kernels.cu.o.cmake:207 (message):
+  Error generating
+  /home/cc/ee106a/fl21/class/ee106a-aaf/ros_workspaces/final-project-workspace/build/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_blas_kernels.cu.o
+
+
+CMake Error at darknet_ros_lib_generated_deconvolutional_kernels.cu.o.cmake:207 (message):
+  Error generating
+  /home/cc/ee106a/fl21/class/ee106a-aaf/ros_workspaces/final-project-workspace/build/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_deconvolutional_kernels.cu.o
+
+
+CMake Error at darknet_ros_lib_generated_crop_layer_kernels.cu.o.cmake:207 (message):
+  Error generating
+  /home/cc/ee106a/fl21/class/ee106a-aaf/ros_workspaces/final-project-workspace/build/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_crop_layer_kernels.cu.o
+
+
+make[2]: *** [CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o] Error 1
+make[2]: *** [CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o] Error 1
+make[2]: *** [CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o] Error 1
+make[2]: *** [CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o] Error 1
+nvcc fatal   : Unsupported gpu architecture 'compute_30'
+nvcc fatal   : Unsupported gpu architecture 'compute_30'
+make[2]: *** [CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o] Error 1
+CMake Error at darknet_ros_lib_generated_activation_kernels.cu.o.cmake:207 (message):
+  Error generating
+  /home/cc/ee106a/fl21/class/ee106a-aaf/ros_workspaces/final-project-workspace/build/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_activation_kernels.cu.o
+
+
+CMake Error at darknet_ros_lib_generated_avgpool_layer_kernels.cu.o.cmake:207 (message):
+  Error generating
+  /home/cc/ee106a/fl21/class/ee106a-aaf/ros_workspaces/final-project-workspace/build/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_avgpool_layer_kernels.cu.o
+
+
+make[2]: *** [CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o] Error 1
+make[2]: *** [CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o] Error 1
+make[1]: *** [CMakeFiles/darknet_ros_lib.dir/all] Error 2
+make: *** [all] Error 2

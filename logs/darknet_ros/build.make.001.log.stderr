@@ -1,0 +1,39 @@
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[01m[K/home/cc/ee106a/fl21/class/ee106a-aaf/ros_workspaces/final-project-workspace/src/darknet_ros/darknet_ros/src/image_interface.cpp:[m[K In function ‘[01m[Kimage** load_alphabet_with_file(char*)[m[K’:
+[01m[K/home/cc/ee106a/fl21/class/ee106a-aaf/ros_workspaces/final-project-workspace/src/darknet_ros/darknet_ros/src/image_interface.cpp:20:18:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [-Wwrite-strings]
+   char* labels = "/labels/%d_%d.png";
+[01;32m[K                  ^[m[K
+[01m[K/home/cc/ee106a/fl21/class/ee106a-aaf/ros_workspaces/final-project-workspace/src/darknet_ros/darknet/src/gemm.c:[m[K In function ‘[01m[Ktime_gpu[m[K’:
+[01m[K/home/cc/ee106a/fl21/class/ee106a-aaf/ros_workspaces/final-project-workspace/src/darknet_ros/darknet/src/gemm.c:232:9:[m[K [01;35m[Kwarning: [m[K‘[01m[KcudaThreadSynchronize[m[K’ is deprecated [-Wdeprecated-declarations]
+         cudaThreadSynchronize();
+[01;32m[K         ^[m[K
+In file included from [01m[K/usr/local/cuda/include/cuda_runtime.h:96:0[m[K,
+                 from [01m[K/home/cc/ee106a/fl21/class/ee106a-aaf/ros_workspaces/final-project-workspace/src/darknet_ros/darknet/include/darknet.h:11[m[K,
+                 from [01m[K/home/cc/ee106a/fl21/class/ee106a-aaf/ros_workspaces/final-project-workspace/src/darknet_ros/darknet/src/utils.h:5[m[K,
+                 from [01m[K/home/cc/ee106a/fl21/class/ee106a-aaf/ros_workspaces/final-project-workspace/src/darknet_ros/darknet/src/gemm.c:2[m[K:
+[01m[K/usr/local/cuda/include/cuda_runtime_api.h:1046:57:[m[K [01;36m[Knote: [m[Kdeclared here
+ extern __CUDA_DEPRECATED __host__ cudaError_t CUDARTAPI cudaThreadSynchronize(void);
+[01;32m[K                                                         ^[m[K
+[01m[K/home/cc/ee106a/fl21/class/ee106a-aaf/ros_workspaces/final-project-workspace/src/darknet_ros/darknet/src/image_opencv.cpp:[m[K In function ‘[01m[Kimage load_image_cv(char*, int)[m[K’:
+[01m[K/home/cc/ee106a/fl21/class/ee106a-aaf/ros_workspaces/final-project-workspace/src/darknet_ros/darknet/src/image_opencv.cpp:89:21:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kint system(const char*)[m[K’, declared with attribute warn_unused_result [-Wunused-result]
+         system(buff);
+[01;32m[K                     ^[m[K

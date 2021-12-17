@@ -1,0 +1,2 @@
+darknet_ros/darknet_ros:darknet_ros/darknet_ros_msgs:following_node:main_node:mapping:turtlebot_control
+-DCATKIN_DEVEL_PREFIX=/home/cc/ee106a/fl21/class/ee106a-aaf/ros_workspaces/final-project-workspace/devel -DCMAKE_INSTALL_PREFIX=/home/cc/ee106a/fl21/class/ee106a-aaf/ros_workspaces/final-project-workspace/install -G Unix Makefiles
