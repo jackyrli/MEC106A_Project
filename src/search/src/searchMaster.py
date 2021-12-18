@@ -61,7 +61,7 @@ class searchMaster:
         self.linear_tol = 0.05
         self.linear_coefficient = 0.15
         self.angular_tol = 15
-        self.angular_coefficient = 0.0012
+        self.angular_coefficient = -0.0012
         self.xmin = 0
         self.xmax = 640
         self.ymin = 0
@@ -265,11 +265,8 @@ class searchMaster:
         #adjust the angular twist of the turtlebot to let object be in the center of the image
         xmid_point = xmin + (xmax - xmin)/2
         error = xmid_point - self.center_x
-        if xmid_point > self.center_x and abs(xmid_point - self.center_x) > self.angular_tol:
-            self.z = -self.angular_coefficient * error
-            return True
-        elif xmid_point < self.center_x and abs(xmid_point - self.center_x) > self.angular_tol:
-            self.z = -self.angular_coefficient * error
+        if abs(xmid_point - self.center_x) > self.angular_tol:
+            self.z = self.angular_coefficient * error
             return True
         else:
             self.z = 0
