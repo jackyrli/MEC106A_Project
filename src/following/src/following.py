@@ -117,8 +117,8 @@ class Following:
         xmid_point = xmin + (xmax - xmin)/2
         print('xmid',xmid_point)
         error = xmid_point - self.center_x
-        derivative = error - self.error
-        self.error = error
+        derivative = error - self.angular_error
+        self.angular_error = error
         if abs(xmid_point - self.center_x) > self.angular_tol:
             self.command.angular.z = -self.angular_coefficient * error - self.angular_coefficient * derivative
             return True
