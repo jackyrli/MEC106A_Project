@@ -25,8 +25,12 @@ class Controller():
         self.velocity_buffer[0] = msg.linear.x
         self.z_buffer[1:3] = self.z_buffer[0:2]
         self.z_buffer[0] = msg.angular.z
-        angular_z = self.z_buffer[0] * 0.5 + self.z_buffer[1] * 0.3 + self.z_buffer[2] * 0.2
-        linear_x = self.velocity_buffer[0] * 0.4 + self.velocity_buffer[1] * 0.25 + self.velocity_buffer[2] * 0.15 + self.velocity_buffer[3] * 0.1 + self.velocity_buffer[4] * 0.1
+        angular_z = self.z_buffer[0]
+        linear_x = self.velocity_buffer[0]
+        #This is to indicate whether we want to turn buffer on.
+        if msg.linear.y != 0:
+            angular_z = self.z_buffer[0] * 0.5 + self.z_buffer[1] * 0.3 + self.z_buffer[2] * 0.2
+            linear_x = self.velocity_buffer[0] * 0.4 + self.velocity_buffer[1] * 0.25 + self.velocity_buffer[2] * 0.15 + self.velocity_buffer[3] * 0.1 + self.velocity_buffer[4] * 0.1
         command = Twist()
         command.linear.x = linear_x
         command.angular.z = angular_z
