@@ -37,7 +37,7 @@ class searchMaster:
         self.status = Status.normal
         self.mileage = 7
         self.r_preferred = 0.4
-        self.idx_prefered = 320
+        self.idx_prefered = 480
         self.rotate = False
         self.r_min_avg = 0.7
         self.idx_min_avg = 0
