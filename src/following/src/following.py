@@ -19,8 +19,8 @@ class Following:
         self.linear_coefficient = 0.2
         self.linear_derivative = 0.15
         self.angular_tol = 15
-        self.angular_coefficient = 0.0015
-        self.angular_derivative = 0.001
+        self.angular_coefficient = -0.0015
+        self.angular_derivative = -0.001
         self.object_names = object_names
         self.rate = rospy.Rate(50)
         self.command = Twist()
@@ -120,7 +120,7 @@ class Following:
         derivative = error - self.angular_error
         self.angular_error = error
         if abs(xmid_point - self.center_x) > self.angular_tol:
-            self.command.angular.z = -self.angular_coefficient * error - self.angular_coefficient * derivative
+            self.command.angular.z = self.angular_coefficient * error + self.angular_coefficient * derivative
             return True
         else:
             self.command.angular.z = 0
